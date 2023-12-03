@@ -1,6 +1,6 @@
 [
     {
-        "title": "bawaan",
+        "title": "Default",
         "mark": "Default",
         "prompt": "{{prompt}}",
         "items": [
@@ -26,8 +26,8 @@
             },
             {
                 "title": "Pengoptimalan masukan bahasa",
-                "mark": "Pertama gunakan aplikasi pihak ketiga untuk mengubah ucapan menjadi teks, lalu gunakan ChatGPT untuk memprosesnya. Saat melakukan perekaman suara, Anda biasanya mengucapkan beberapa mantra dan partikel modal, yang dapat diubah menjadi bahasa tertulis menggunakan ChatGPT untuk mengoptimalkan efek ucapan-ke-teks. Berasal dari guru @yushuzhilan "Gunakan bahasa yang ringkas untuk menata paragraf ini, jelaskan secara logika, dan hilangkan kesalahan ketik."",
-                "prompt": "请用简洁明了的语言，编辑以下段落，以改善其逻辑流程，消除任何印刷错误，并以中文作答。请务必保持文章的原意。请从编辑以下文字开始：[语音输入]"
+                "mark": "Pertama gunakan aplikasi pihak ketiga untuk mengubah ucapan menjadi teks, lalu gunakan ChatGPT untuk memprosesnya. Saat melakukan perekaman suara, Anda biasanya mengucapkan beberapa mantra dan partikel modal, yang dapat diubah menjadi bahasa tertulis menggunakan ChatGPT untuk mengoptimalkan efek ucapan-ke-teks. Berasal dari guru @yushuzhilan Gunakan bahasa yang ringkas untuk menata paragraf ini, jelaskan secara logika, dan hilangkan kesalahan ketik.",
+                "prompt": "Harap gunakan bahasa yang ringkas dan jelas, edit paragraf berikut untuk meningkatkan alur logisnya, hilangkan kesalahan ketik, dan jawab dalam bahasa Indonesia. Pastikan untuk menjaga makna asli artikel tersebut. Silakan mulai dengan mengedit teks berikut: [Input suara]"
             },
             {
                 "title": "论文式回答",
