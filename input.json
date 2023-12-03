@@ -26,7 +26,7 @@
             },
             {
                 "title": "Pengoptimalan masukan bahasa",
-                "mark": "先用第三方应用将语音转换成文字，再用 ChatGPT 进行处理。在进行语音录入时，通常会习惯性地说一些口头禅和语气词，使用 ChatGPT 就可以将其转换成书面语言，以优化语音转文字的效果。源于 @玉树芝兰老师的「用简洁的语言整理这一段话，要逻辑清晰，去掉错别字」。",
+                "mark": "Pertama gunakan aplikasi pihak ketiga untuk mengubah ucapan menjadi teks, lalu gunakan ChatGPT untuk memprosesnya. Saat melakukan perekaman suara, Anda biasanya mengucapkan beberapa mantra dan partikel modal, yang dapat diubah menjadi bahasa tertulis menggunakan ChatGPT untuk mengoptimalkan efek ucapan-ke-teks. Berasal dari guru @yushuzhilan "Gunakan bahasa yang ringkas untuk menata paragraf ini, jelaskan secara logika, dan hilangkan kesalahan ketik."",
                 "prompt": "请用简洁明了的语言，编辑以下段落，以改善其逻辑流程，消除任何印刷错误，并以中文作答。请务必保持文章的原意。请从编辑以下文字开始：[语音输入]"
             },
             {
