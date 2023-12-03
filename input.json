@@ -1,6 +1,6 @@
 [
     {
-        "title": "Default",
+        "title": "bawaan",
         "mark": "Default",
         "prompt": "{{prompt}}",
         "items": [
@@ -30,9 +30,9 @@
                 "prompt": "Harap gunakan bahasa yang ringkas dan jelas, edit paragraf berikut untuk meningkatkan alur logisnya, hilangkan kesalahan ketik, dan jawab dalam bahasa Indonesia. Pastikan untuk menjaga makna asli artikel tersebut. Silakan mulai dengan mengedit teks berikut: [Input suara]"
             },
             {
-                "title": "论文式回答",
-                "mark": "以论文形式讨论问题，能够获得连贯的、结构化的和更高质量的回答。",
-                "prompt": "写一篇高度详细的文章，包括引言、主体和结论段落，以回应以下内容：[问题］"
+                "title": "jawaban esai",
+                "mark": "Pembahasan soal dalam format esai menghasilkan jawaban yang runtut, terstruktur, dan berkualitas.",
+                "prompt": "Tulis esai yang sangat rinci, termasuk paragraf pendahuluan, isi, dan kesimpulan, sebagai tanggapan terhadap: [Pertanyaan]"
             }
         ]
     },
@@ -42,9 +42,9 @@
         "prompt": "{{prompt}}",
         "items": [
             {
-                "title": "语言识别器",
-                "mark": "识别输入的语言种类。",
-                "prompt": "我想让你充当一个语言检测器。我将用任何语言打出一个句子，你要回答我我写的句子在你那里是什么语言。不要写任何解释或其他词语，只需回答语言名称。"
+                "title": "Mengidentifikasi jenis bahasa",
+                "mark": "Mengidentifikasi jenis bahasa input.",
+                "prompt": "Saya ingin Anda bertindak sebagai pendeteksi bahasa. Saya akan mengetik kalimat dalam bahasa apa pun dan Anda harus menjawab bahasa apa kalimat yang saya tulis dalam bahasa Anda. Jangan menulis penjelasan atau kata lain apa pun, cukup jawaban Nama bahasa."
             },
             {
                 "title": "语言生成器",
