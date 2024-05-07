@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name         ANJING Youtube NO preroll ads, Undetectable!
-// @name:zh-CN   YouTube 前贴片广告拦截
+// @name         ⭐Youtubeku2024⭐
+// @name:zh-CN   YouTube 前贴片广告拦截器
 // @namespace    http://tampermonkey.net/
 // @version      0.3.3
 // @description  Not an average ad skipper, Bypass new restrictions!
@@ -15,8 +15,8 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
 // @grant        none
 // @run-at       document_end
-// @downloadURL https://update.greasyfork.org/scripts/477464/%5BBETA%5D%20Youtube%20NO%20preroll%20ads%2C%20Undetectable%21.user.js
-// @updateURL https://update.greasyfork.org/scripts/477464/%5BBETA%5D%20Youtube%20NO%20preroll%20ads%2C%20Undetectable%21.meta.js
+// @downloadURL https://github.com/hantupota/ChatGPT-Prompt-indonesia/blob/main/Youtubeku2024.js
+// @updateURL https://github.com/hantupota/ChatGPT-Prompt-indonesia/blob/main/Youtubeku2024.js
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js
 // @icon                https://cdn.jsdelivr.net/gh/adamlui/userscripts/chatgpt/media/icons/openai-favicon48.png
 // @icon64              https://cdn.jsdelivr.net/gh/adamlui/userscripts/chatgpt/media/icons/openai-favicon64.png
