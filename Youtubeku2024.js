@@ -1919,3 +1919,68 @@ function setYtPlayerAttributes(player, url){
     ['blocking']
   );
 })();
+//Ultimate YouTube Ad Remover and Detection Bypasser
+
+(function() {
+  'use strict';
+
+  let adsBlocked = 0;
+
+  // Function to remove ads
+  const removeAds = () => {
+    const adOverlays = document.querySelectorAll('.ytp-ad-overlay-close-button');
+    adOverlays.forEach(ad => {
+      ad.click();
+      adsBlocked++;
+    });
+
+    const videoAds = document.querySelectorAll('.video-ads');
+    videoAds.forEach(ad => {
+      ad.remove();
+      adsBlocked++;
+    });
+
+    const adTexts = document.querySelectorAll('.ytp-ad-text');
+    adTexts.forEach(ad => {
+      ad.remove();
+      adsBlocked++;
+    });
+  };
+
+  // Monitor for new elements added to the DOM
+  const observer = new MutationObserver(mutations => {
+    mutations.forEach(mutation => {
+      mutation.addedNodes.forEach(node => {
+        if (node.nodeType === Node.ELEMENT_NODE) {
+          if (node.classList.contains('ytp-ad-overlay') || node.classList.contains('video-ads') || node.classList.contains('ytp-ad-text')) {
+            removeAds();
+          }
+        }
+      });
+    });
+  });
+
+  // Start observing the document
+  observer.observe(document.body, { childList: true, subtree: true, attributes: false, characterData: false });
+
+  // Event listener to remove context menu, keyboard/mouse events on video load
+  window.addEventListener('load', () => {
+    const player = document.querySelector('.html5-main-video');
+    if (player) {
+      player.oncontextmenu = null;
+      player.onkeydown = null;
+      player.onmousedown = null;
+      player.onselectstart = null;
+    }
+  });
+
+  // Button to show the number of ads blocked
+  const adBlockedButton = document.createElement('button');
+  adBlockedButton.innerHTML = 'Ads Blocked';
+  adBlockedButton.style.position = 'fixed';
+  adBlockedButton.style.bottom = '20px';
+  adBlockedButton.style.left = '20px';
+  adBlockedButton.style.zIndex = '9999';
+  adBlockedButton.onclick = () => alert(`Total Ads Blocked: ${adsBlocked}`);
+  document.body.appendChild(adBlockedButton);
+})();
