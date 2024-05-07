@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         ANJING Youtube NO preroll ads, Undetectable!
-// @name:zh-CN   YouTube 前贴片广告拦截器
+// @name:zh-CN   YouTube 前贴片广告拦截
 // @namespace    http://tampermonkey.net/
 // @version      0.3.3
 // @description  Not an average ad skipper, Bypass new restrictions!
