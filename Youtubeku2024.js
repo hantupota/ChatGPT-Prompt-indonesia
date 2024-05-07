@@ -2403,4 +2403,198 @@ function setYtPlayerAttributes(player, url){
     }
 
 })()
+// ChatGPT Auto-Continue ⏩
+(async () => {
 
+    // Init config
+    const config = {
+        appName: 'ChatGPT Auto-Continue', appSymbol: '≫',
+        keyPrefix: 'chatGPTautoContinue', userLanguage: chatgpt.getUserLanguage(),
+        gitHubURL: 'https://github.com/adamlui/chatgpt-auto-continue',
+        greasyForkURL: 'https://greasyfork.org/scripts/466789-chatgpt-auto-continue' }
+    config.updateURL = config.greasyForkURL.replace('https://', 'https://update.')
+        .replace(/(\d+)-?([a-zA-Z-]*)$/, (_, id, name) => `${ id }/${ !name ? 'script' : name }.meta.js`)
+    config.supportURL = config.gitHubURL + '/issues/new'
+    config.assetHostURL = config.gitHubURL.replace('github.com', 'cdn.jsdelivr.net/gh') + '/'
+    loadSetting('notifDisabled')
+
+    // Define messages
+    const msgsLoaded = new Promise(resolve => {
+        const msgHostDir = config.assetHostURL + 'greasemonkey/_locales/',
+              msgLocaleDir = ( config.userLanguage ? config.userLanguage.replace('-', '_') : 'en' ) + '/'
+        let msgHref = msgHostDir + msgLocaleDir + 'messages.json', msgXHRtries = 0
+        GM.xmlHttpRequest({ method: 'GET', url: msgHref, onload: onLoad })
+        function onLoad(resp) {
+            try { // to return localized messages.json
+                const msgs = JSON.parse(resp.responseText), flatMsgs = {}
+                for (const key in msgs)  // remove need to ref nested keys
+                    if (typeof msgs[key] == 'object' && 'message' in msgs[key])
+                        flatMsgs[key] = msgs[key].message
+                resolve(flatMsgs)
+            } catch (err) { // if bad response
+                msgXHRtries++ ; if (msgXHRtries == 3) return resolve({}) // try up to 3X (original/region-stripped/EN) only
+                msgHref = config.userLanguage.includes('-') && msgXHRtries == 1 ? // if regional lang on 1st try...
+                    msgHref.replace(/([^_]*)_[^/]*(\/.*)/, '$1$2') // ...strip region before retrying
+                        : ( msgHostDir + 'en/messages.json' ) // else use default English messages
+                GM.xmlHttpRequest({ method: 'GET', url: msgHref, onload: onLoad })
+            }
+        }
+    }) ; const msgs = await msgsLoaded
+
+    // Init/register menu
+    let menuIDs = [], state = { symbol: ['✔️', '❌'], word: ['ON', 'OFF'],
+                                separator: getUserscriptManager() == 'Tampermonkey' ? ' — ' : ': ' }
+    registerMenu() // create browser toolbar menu
+
+    // Stylize alerts
+    if (!document.getElementById('chatgpt-alert-override-style')) {
+        const chatgptAlertStyle = document.createElement('style')
+        chatgptAlertStyle.id = 'chatgpt-alert-override-style'
+        chatgptAlertStyle.innerText = '.chatgpt-modal button {'
+                + 'font-size: 0.77rem ; text-transform: uppercase ;'
+                + 'border-radius: 0 !important ; padding: 5px !important ; min-width: 102px }'
+            + '.modal-buttons { margin-left: -13px !important }'
+        document.head.append(chatgptAlertStyle)
+    }
+
+    // Observe DOM for need to continue generating response
+    await chatgpt.isLoaded()
+    const continueObserver = new MutationObserver(mutations => mutations.forEach(mutation => {
+        if (mutation.attributeName == 'style' && mutation.target.style.opacity == '1') {
+            chatgpt.getContinueGeneratingButton().click()
+            notify(msgs.notif_chatAutoContinued || 'Chat Auto-Continued', 'bottom-right')
+    }}))
+    continueObserver.observe(document.querySelector('main'), { attributes: true, subtree: true })
+
+    // Notify of status on load
+    if (!config.notifDisabled) notify(( msgs.mode_autoContinue || 'Auto-Continue' ) + ': ON')
+
+    // Define SCRIPT functions
+
+    function loadSetting(...keys) { keys.forEach(key => config[key] = GM_getValue(config.keyPrefix + '_' + key, false)) }
+    function saveSetting(key, value) { GM_setValue(config.keyPrefix + '_' + key, value) ; config[key] = value }
+    function safeWindowOpen(url) { window.open(url, '_blank', 'noopener') } // to prevent backdoor vulnerabilities
+    function getUserscriptManager() { try { return GM_info.scriptHandler } catch (err) { return 'other' }}
+
+    // Define MENU functions
+
+    function registerMenu() {
+        menuIDs = [] // empty to store newly registered cmds for removal while preserving order
+
+        // Add command to hide/show notifications on load
+        const mnLabel = state.symbol[+config.notifDisabled] + ' '
+                      + ( msgs.menuLabel_modeNotifs || 'Mode Notifications' )
+                      + state.separator + state.word[+config.notifDisabled]
+        menuIDs.push(GM_registerMenuCommand(mnLabel, function() {
+            saveSetting('notifDisabled', !config.notifDisabled)
+            notify(msgs.menuLabel_modeNotifs + ': ' + state.word[+config.notifDisabled])
+            for (const id of menuIDs) { GM_unregisterMenuCommand(id) } registerMenu() // refresh menu
+        }))
+
+        // Add command to launch About modal
+        const aboutLabel = `💡 ${ msgs.menuLabel_about || 'About' } ${ msgs.appName || config.appName }`
+        menuIDs.push(GM_registerMenuCommand(aboutLabel, launchAboutModal))
+    }
+
+    function launchAboutModal() {
+
+        // Show alert
+        const chatgptJSver = (/chatgpt-([\d.]+)\.min/.exec(GM_info.script.header) || [null, ''])[1],
+              headingStyle = 'font-size: 1.15rem',
+              pStyle = 'position: relative ; left: 3px',
+              pBrStyle = 'position: relative ; left: 4px ',
+              aStyle = 'color: ' + ( chatgpt.isDarkMode() ? '#c67afb' : '#8325c4' ) // purple
+        const aboutAlertID = alert(
+            msgs.appName || config.appName, // title
+            `<span style="${ headingStyle }"><b>🏷️ <i>${ msgs.about_version || 'Version' }</i></b>: </span>`
+                + `<span style="${ pStyle }">${ GM_info.script.version }</span>\n`
+            + `<span style="${ headingStyle }"><b>⚡ <i>${ msgs.about_poweredBy || 'Powered by' }</i></b>: </span>`
+                + `<span style="${ pStyle }"><a style="${ aStyle }" href="https://chatgpt.js.org" target="_blank" rel="noopener">`
+                + 'chatgpt.js</a>' + ( chatgptJSver ? ( ' v' + chatgptJSver ) : '' ) + '</span>\n'
+            + `<span style="${ headingStyle }"><b>📜 <i>${ msgs.about_sourceCode || 'Source code' }</i></b>:</span>\n`
+                + `<span style="${ pBrStyle }"><a href="${ config.gitHubURL }" target="_blank" rel="nopener">`
+                + config.gitHubURL + '</a></span>',
+            [ // buttons
+                function checkForUpdates() { updateCheck() },
+                function getSupport() { safeWindowOpen(config.supportURL) },
+                function leaveAReview() { safeWindowOpen(config.greasyForkURL + '/feedback#post-discussion') },
+                function moreChatGPTapps() { safeWindowOpen('https://github.com/adamlui/chatgpt-apps') }
+            ], '', 478 // set width
+        )
+
+        // Re-format buttons to include emoji + localized label + hide Dismiss button
+        for (const button of document.getElementById(aboutAlertID).querySelectorAll('button')) {
+            if (/updates/i.test(button.textContent)) button.textContent = (
+                '🚀 ' + ( msgs.buttonLabel_updateCheck || 'Check for Updates' ))
+            else if (/support/i.test(button.textContent)) button.textContent = (
+                '🧠 ' + ( msgs.buttonLabel_getSupport || 'Get Support' ))
+            else if (/review/i.test(button.textContent)) button.textContent = (
+                '⭐ ' + ( msgs.buttonLabel_leaveReview || 'Leave a Review' ))
+            else if (/apps/i.test(button.textContent)) button.textContent = (
+                '🤖 ' + ( msgs.buttonLabel_moreApps || 'More ChatGPT Apps' ))
+            else button.style.display = 'none' // hide Dismiss button
+        }
+    }
+
+    function updateCheck() {
+
+        // Fetch latest meta
+        const currentVer = GM_info.script.version
+        GM.xmlHttpRequest({
+            method: 'GET', url: config.updateURL + '?t=' + Date.now(),
+            headers: { 'Cache-Control': 'no-cache' },
+            onload: response => { const updateAlertWidth = 377
+
+                // Compare versions
+                const latestVer = /@version +(.*)/.exec(response.responseText)[1]
+                for (let i = 0 ; i < 4 ; i++) { // loop thru subver's
+                    const currentSubVer = parseInt(currentVer.split('.')[i], 10) || 0,
+                          latestSubVer = parseInt(latestVer.split('.')[i], 10) || 0
+                    if (currentSubVer > latestSubVer) break // out of comparison since not outdated
+                    else if (latestSubVer > currentSubVer) { // if outdated
+
+                        // Alert to update
+                        const updateAlertID = alert(( msgs.alert_updateAvail || 'Update available' ) + '! 🚀', // title
+                            ( msgs.alert_newerVer || 'An update to' ) + ' ' // msg
+                                + ( msgs.appName || config.appName ) + ' '
+                                + `(v ${ latestVer }) ${ msgs.alert_isAvail || 'is available' }!   `
+                                + '<a target="_blank" rel="noopener" style="font-size: 0.7rem" '
+                                    + 'href="' + config.gitHubURL + '/commits/main/greasemonkey/'
+                                    + config.updateURL.replace(/.*\/(.*)meta\.js/, '$1user.js') + '" '
+                                    + `> ${ msgs.link_viewChanges || 'View changes' }</a>`,
+                            function update() { // button
+                                GM_openInTab(config.updateURL.replace('meta.js', 'user.js') + '?t=' + Date.now(),
+                                    { active: true, insert: true } // focus, make adjacent
+                                ).onclose = () => location.reload() },
+                            '', updateAlertWidth
+                        )
+
+                        // Localize button labels if needed
+                        if (!config.userLanguage.startsWith('en')) {
+                            const updateAlert = document.querySelector(`[id="${ updateAlertID }"]`),
+                                  updateBtns = updateAlert.querySelectorAll('button')
+                            updateBtns[1].textContent = msgs.buttonLabel_update || 'Update'
+                            updateBtns[0].textContent = msgs.buttonLabel_dismiss || 'Dismiss'
+                        }
+
+                        return
+                }}
+
+                // Alert to no update, return to About alert
+                alert(( msgs.alert_upToDate || 'Up-to-date' ) + '!', // title
+                    `${ msgs.appName || 'ChatGPT Widescreen Mode' } (v${ currentVer }) ` // msg
+                        + ( msgs.alert_isUpToDate || 'is up-to-date' ) + '!',
+                    '', '', updateAlertWidth
+                )
+                launchAboutModal()
+    }})}
+
+    // Define FEEDBACK functions
+
+    function notify(msg, position = '', notifDuration = '', shadow = '') {
+        chatgpt.notify(`${ config.appSymbol } ${ msg }`, position, notifDuration, shadow || chatgpt.isDarkMode() ? '' : 'shadow') }
+
+    function alert(title = '', msg = '', btns = '', checkbox = '', width = '') {
+        return chatgpt.alert(`${ config.appSymbol } ${ title }`, msg, btns, checkbox, width )}
+
+})()
