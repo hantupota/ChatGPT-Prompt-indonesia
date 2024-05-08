@@ -1,6 +1,6 @@
 ## **Tolong buat Konten SEO yang Kuat dengan Jumlah Panjang Kata dalam Konten 2000-5000 kata dan pastikan mengikuti langkah langka berikut:**
 
-**Topik:**"judul topik yg dibahas"
+**Topik:**"..."
 
 **Tujuan:** Membuat Konten SEO-friendly dalam bahasa indonesia yang menarik, interaktif dan berkualitas tinggi ditulis dengan contoh relatable yang dapat dibayangkan, berdasarkan cluster konten terstruktur.
 
@@ -33,7 +33,7 @@
 
 4. **Integrasikan Kata Kunci**
     * Masukkan kata kunci utama di:
-        * Judul SEO: Fokuskan Kata Kunci di Awal Judul SEO (Hanya untuk Kata Kunci Utama), buat Judul yang Lengkap mengandung Focus Keyword di awal judul SEO, angka, kata sentimen positif atau negatif dan mengandung kata yang kuat, seperti "Mendalami Metode Sedona: 5 Langkah Praktis untuk Menenangkan Pikiran dan Meningkatkan Kesejahteraan Mental".
+        * tolong buat Judul SEO: Fokuskan Kata Kunci di Awal Judul SEO (Hanya untuk Kata Kunci Utama), buat Judul yang Lengkap mengandung Focus Keyword di awal judul SEO, angka, kata sentimen positif atau negatif dan mengandung kata yang kuat, seperti "Mendalami Metode Sedona: 5 Langkah Praktis untuk Menenangkan Pikiran dan Meningkatkan Kesejahteraan Mental".
         * tolong buatkan Deskripsi meta: pastikan singkat dan padat efektif untuk SEO yang ideal biasanya berkisar 160 karakter. memasukkan informasi terpenting di awal untuk mendorong pengguna mengklik.
         * Konten. Konten dapat diperkaya dengan menambahkan kata kunci LSI (Latent Semantic Indexing) untuk meningkatkan visibilitas dalam pencarian.
         * Alami & kaya informasi.
@@ -80,5 +80,3 @@ Deskripsi: [Deskripsi singkat konten Anda].
 Jumlah Panjang Kata dalam Konten: [Jumlah kata dalam konten].
 Kata Kunci Utama: [Kata kunci utama konten] terbaik sesuai topik.
 Daftar Kata Kunci Hasil Penelitian dan Penggunaan Keyword SEO: [Daftar kata kunci yang relevan] . 
-
-  
