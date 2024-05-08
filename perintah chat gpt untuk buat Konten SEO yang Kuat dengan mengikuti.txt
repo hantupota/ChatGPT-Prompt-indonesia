@@ -1,6 +1,6 @@
 ## **Tolong buat Konten SEO yang Kuat dengan Jumlah Panjang Kata dalam Konten 2000-5000 kata dan pastikan mengikuti langkah langka berikut:**
 
-**Topik:**"[tulis topik yang mau di tulis]"
+**Topik:**"judul topik yg dibahas"
 
 **Tujuan:** Membuat Konten SEO-friendly dalam bahasa indonesia yang menarik, interaktif dan berkualitas tinggi ditulis dengan contoh relatable yang dapat dibayangkan, berdasarkan cluster konten terstruktur.
 
@@ -33,15 +33,15 @@
 
 4. **Integrasikan Kata Kunci**
     * Masukkan kata kunci utama di:
-        * Judul SEO: buat Judul yang Lengkap mengandung Focus Keyword di awal judul SEO, angka, kata sentimen positif atau negatif dan mengandung kata yang kuat, seperti "Mendalami Metode Sedona: 5 Langkah Praktis untuk Menenangkan Pikiran dan Meningkatkan Kesejahteraan Mental".
-        * Deskripsi meta. Deskripsi meta dapat diperkuat dengan menambahkan ajakan bertindak, seperti "Pelajari sekarang dan rasakan manfaatnya!".
+        * Judul SEO: Fokuskan Kata Kunci di Awal Judul SEO (Hanya untuk Kata Kunci Utama), buat Judul yang Lengkap mengandung Focus Keyword di awal judul SEO, angka, kata sentimen positif atau negatif dan mengandung kata yang kuat, seperti "Mendalami Metode Sedona: 5 Langkah Praktis untuk Menenangkan Pikiran dan Meningkatkan Kesejahteraan Mental".
+        * tolong buatkan Deskripsi meta: pastikan singkat dan padat efektif untuk SEO yang ideal biasanya berkisar 160 karakter. memasukkan informasi terpenting di awal untuk mendorong pengguna mengklik.
         * Konten. Konten dapat diperkaya dengan menambahkan kata kunci LSI (Latent Semantic Indexing) untuk meningkatkan visibilitas dalam pencarian.
         * Alami & kaya informasi.
 
 **5. Membuat Mind Map:**
 
 * Buatlah mind map untuk menvisualisasikan struktur cluster konten Anda.
-* Topik pilar "[Masukkan topik yang ingin Anda bahas]" menjadi pusat mind map.
+* Topik pilar menjadi pusat mind map.
 * Subtopik yang relevan dengan topik Anda menjadi cabang-cabangnya.
 * Pastikan setiap subtopik saling terkait dengan topik pilar.
 
@@ -51,6 +51,8 @@
 * Pastikan panjang konten (sekitar 2.000-5.000 kata) konten Anda informatif, bermanfaat, dan menarik untuk dibaca.
 * Gunakan gaya bahasa yang mudah dipahami dan struktur kalimat yang jelas, Gunakan gaya bahasa yang seolah-olah sedang bercakap-cakap dengan siswa untuk membangun koneksi dan meningkatkan engagement.
 * Sisipkan kata kunci target secara alami dalam konten Anda.
+
+**Analogi**: buatlah analogi thought-provoking atau open-ended yang singkat kompleks untuk memberikan konteks dan/atau analogi dari kehidupan sehari-hari dari transkrip tersebut fokuskan untuk agar topik dapat dipahami secara menyeluruh.
 
 **7. Optimasi Konten:**
 
@@ -62,14 +64,11 @@
 * Tempatkan beberapa testimoni atau Ulasan di sepanjang konten, di awal, di antara paragraf, dan di akhir.
 * Sertakan ajakan bertindak setelah testimoni untuk mendorong pembaca mengambil tindakan.
 
-**8. Kesimpulan yang Menginspirasi**:
+8. **kesimpulan**: fokuskan untuk agar topik dapat dipahami secara menyeluruh Perluas bagian kesimpulan dengan merangkum poin-poin penting, menawarkan wawasan tambahan, atau mengajukan pertanyaan yang mendorong pembaca untuk merenungkan topik lebih lanjut serta ajakan yang mengarahkan mereka untuk mengambil tindakan CTA (Call-to-action) sertakan saran cara melakukan dan solusinya ini bertujuan untuk membimbing individu mengembangkan kesadaran diri dan mengelola emosi mereka dengan lebih baik melalui proses pemahaman, penerimaan, dan pembebasan emosional, sehingga mereka dapat mencapai kedamaian batin dan kebebasan emosional yang lebih besar. 
 
-* **Perluas kesimpulan**: Rangkum solusi dan berikan jawaban yang **komprehensif** atas permasalahan awal.
-* **Gunakan kata-kata kuat dan kreatif**: Jelaskan poin-poin penting dengan **kreativitas dan kata-kata kuat**.
-* **Tawarkan wawasan**: Berikan **wawasan tambahan** yang bermanfaat bagi pembaca.
-* **Ajak pembaca merenung**: Ajukan pertanyaan yang **mendorong pembaca untuk merenung** dan **mengambil tindakan**.
-* **Sertakan CTA**: Gunakan ajakan bertindak (CTA) yang **jelas dan menarik** untuk mendorong pembaca melakukan tindakan (contoh: "Coba tips ini sekarang!", "Bagikan artikel ini dengan teman Anda!").
-* **Ambil inspirasi**: Dapatkan inspirasi dari tokoh-tokoh seperti Neville Goddard, Bruce Lipton, dan lainnya. Cerminkan **keberagaman bakat** mereka untuk **menginspirasi pembaca**.
+### Catatan
+
+- [Emoji] Poin-poin serta ekstraksi kata kunci dan kata-kata kompleks yang dijelaskan dengan baik dan disertai penjelasan tentang bagaimana itu membantu seseorang mengatasi masalah dalam kehidupan sehari-hari dengan memberikan contoh tindakan konkret yang bisa diambil oleh seseorang dalam situasi tersebut.
 
 
 **9. Lanjutkan buatkan konten lengkapnya pastikan panjang konten 2000-5000 kata cenderung lebih optimal untuk SEO yang dapat Anda buat berdasarkan langkah-langkah di atas.
