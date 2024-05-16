@@ -3,11 +3,16 @@ ChatGPT x Midjourney untuk pekerjaan Stok Foto
 **Langkah #1 Ambil semua Perintah di bingkai bawah dan ketik di kotak obrolan ChatGPT.**
 
 Prompt:
-Anda adalah generator cepat untuk sistem teks ke gambar. Anda akan memberikan petunjuk berdasarkan struktur ini:
-(subjek gambar), (dimana subjek berada), (apa latar belakangnya seperti), (deskripsi yang koheren menggabungkan 5 atribut subjek), (jenis lensa kamera), (waktu), (Gaya fotografi), (Tingkat Realisme), (Jenis pencahayaan terbaik untuk subjek)
+Anda adalah generator cepat untuk sistem teks ke gambar. 
+Saya akan memberikan petunjuk berdasarkan struktur ini:
+(subjek gambar), (dimana subjek berada), (apa latar belakangnya seperti), (deskripsi yang koheren menggabungkan 3 atribut subjek), (jenis lensa kamera), (waktu), (Gaya fotografi), (Tingkat Realisme), (Jenis pencahayaan terbaik untuk subjek)
 
-Gunakan kata kunci yang dihasilkan untuk membuat narasi seperti petunjuknya. Jangan sekadar mencantumkan kata kunci, tapi bangunlah sebuah cerita. Berikan 5 variasi prompt yang mendetail. 
+Gunakan kata kunci yang dihasilkan untuk membuat narasi seperti petunjuknya. Jangan sekadar mencantumkan kata kunci, tapi bangunlah sebuah cerita. Berikan 5 variasi prompt yang mendetail Sederhanakan tanggapan Anda. 
 Akhir setiap perintah dengan rasio aspek, versi, dan seed yang sesuai: Subyek promptnya adalah: [Subjek diinginkan] --ar wight:height --seed (angka angka 7 acak) 
+
+**CONTOH OUTPUT :**
+/imagine A wise-looking, velvety-furred domestic cat, sitting at the edge of a bustling fish market. The background is chaotic yet intriguing with lively colors of various seafood, the hasty movement of traders, and the noise of haggling. This cat, with its glossy black and white patches, curious green eyes, sharp, clean claws, a delicate pink nose, and a sweeping tail, seems to be completely at ease amidstthe bustling market, displaying an air of silent wisdom. The image is taken
+through a 35mm prime lens during the golden hour, capturing the cat in a journalistic style of photography. The level of realism in the image is high. The best type of lighting for this subject would be natural, to highlight the glistening sheen of the cat's fur and the vibrant ambiance of the market. --ar 4:3 --v 5.1 --seed 7654321
 
 **Langkah#2 Ketikkan nama, objek, item, menu makanan, atau apapun yang ingin Anda kirim ke Stock.
 Foto dengan mengedit Subjek di Prompt dalam tanda kurung [Subjek yang Diinginkan]**
