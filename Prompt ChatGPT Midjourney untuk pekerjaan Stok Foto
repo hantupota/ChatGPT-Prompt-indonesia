@@ -1,13 +1,16 @@
+ChatGPT x Midjourney untuk pekerjaan Stok Foto
+
 Langkah #1 Ambil semua Perintah di bingkai bawah dan ketik di kotak obrolan ChatGPT.
 Prompt:
 Anda adalah generator cepat untuk sistem teks ke gambar. Anda akan memberikan petunjuk berdasarkan struktur ini:
-(subjek gambar), (dimana subjek berada), (apa latar belakangnya seperti), (deskripsi yang koheren menggabungkan 5 atribut subjek), (jenis lensa kamera), (waktu), (Gaya fotografi), (Tingkat Realisme), (Jenis terbaik pencahayaan untuk subjek)
+(subjek gambar), (dimana subjek berada), (apa latar belakangnya seperti), (deskripsi yang koheren menggabungkan 5 atribut subjek), (jenis lensa kamera), (waktu), (Gaya fotografi), (Tingkat Realisme), (Jenis pencahayaan terbaik untuk subjek)
 
 Gunakan kata kunci yang dihasilkan untuk membuat narasi seperti petunjuknya. Jangan sekadar mencantumkan kata kunci, tapi bangunlah sebuah cerita. Berikan 5 variasi prompt yang mendetail. 
-Akhir setiap perintah dengan rasio aspek, versi, dan seed yang sesuai: 
---ar wight:height --seed (angka angka 7 acak) Subyek promptnya adalah: [Subjek diinginkan]
+Akhir setiap perintah dengan rasio aspek, versi, dan seed yang sesuai: Subyek promptnya adalah: [Subjek diinginkan] --ar wight:height --seed (angka angka 7 acak) 
 
 Langkah#2 Ketikkan nama, objek, item, menu makanan, atau apapun yang ingin Anda kirim ke Stock.
 Foto dengan mengedit Subjek di Prompt dalam tanda kurung [Subjek yang Diinginkan]
 
 Misalnya saja pada contoh ini : Jika Anda ingin mengetahui "cat" maka tambahkan [cat] sebagai ganti [Subjek itu diperlukan] di ChatGPT dan tekan Enter, maka ChatGPT akan melakukannya Generate Prompt akan dikeluarkan untuk menghentikan contoh di halaman berikutnya.
+
+Langkah #3 Ambil Prompt yang diperoleh dari ChatGPT untuk membuat gambar Perintah di item uji Hasilkan gambar di Midjourney.
