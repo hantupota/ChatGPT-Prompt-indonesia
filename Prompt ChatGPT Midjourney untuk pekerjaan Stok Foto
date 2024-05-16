@@ -1,6 +1,7 @@
 ChatGPT x Midjourney untuk pekerjaan Stok Foto
 
-Langkah #1 Ambil semua Perintah di bingkai bawah dan ketik di kotak obrolan ChatGPT.
+**Langkah #1 Ambil semua Perintah di bingkai bawah dan ketik di kotak obrolan ChatGPT.**
+
 Prompt:
 Anda adalah generator cepat untuk sistem teks ke gambar. Anda akan memberikan petunjuk berdasarkan struktur ini:
 (subjek gambar), (dimana subjek berada), (apa latar belakangnya seperti), (deskripsi yang koheren menggabungkan 5 atribut subjek), (jenis lensa kamera), (waktu), (Gaya fotografi), (Tingkat Realisme), (Jenis pencahayaan terbaik untuk subjek)
@@ -8,15 +9,15 @@ Anda adalah generator cepat untuk sistem teks ke gambar. Anda akan memberikan pe
 Gunakan kata kunci yang dihasilkan untuk membuat narasi seperti petunjuknya. Jangan sekadar mencantumkan kata kunci, tapi bangunlah sebuah cerita. Berikan 5 variasi prompt yang mendetail. 
 Akhir setiap perintah dengan rasio aspek, versi, dan seed yang sesuai: Subyek promptnya adalah: [Subjek diinginkan] --ar wight:height --seed (angka angka 7 acak) 
 
-Langkah#2 Ketikkan nama, objek, item, menu makanan, atau apapun yang ingin Anda kirim ke Stock.
-Foto dengan mengedit Subjek di Prompt dalam tanda kurung [Subjek yang Diinginkan]
+**Langkah#2 Ketikkan nama, objek, item, menu makanan, atau apapun yang ingin Anda kirim ke Stock.
+Foto dengan mengedit Subjek di Prompt dalam tanda kurung [Subjek yang Diinginkan]**
 
 Misalnya saja pada contoh ini : Jika Anda ingin mengetahui "cat" maka tambahkan [cat] sebagai ganti [Subjek itu diperlukan] di ChatGPT dan tekan Enter, maka ChatGPT akan melakukannya Generate Prompt akan dikeluarkan untuk menghentikan contoh di halaman berikutnya.
 
-Langkah #3 Ambil Prompt yang diperoleh dari ChatGPT untuk membuat gambar Perintah di item uji Hasilkan gambar di Midjourney.
+**Langkah #3 Ambil Prompt yang diperoleh dari ChatGPT untuk membuat gambar Perintah di item uji Hasilkan gambar di Midjourney.**
 ==========================================================================
 
-Pilih Prompt di bawah ini untuk digunakan dalam membuat gambar dengan gaya Futuristic Cites.
+**Pilih Prompt di bawah ini untuk digunakan dalam membuat gambar dengan gaya Futuristic Cites.**
 
 1. Menghasilkan gambaran lanskap kota yang futuristik, dengan bangunan yang menjulang tinggi dan teknologi canggih yang mencerminkan pertumbuhan dan kemajuan masyarakat.
 
@@ -36,3 +37,60 @@ bentuk, dan simbol kemajuan dan inovasi mengalir dalam pola yang dinamis.
 8. Menghasilkan gambaran kota futuristik di tengah hutan, dengan menjulang tinggi struktur, teknologi canggih, dan lingkungan hijau yang subur mencerminkan tantangan unik kehidupan kota dalam lingkungan alami.
 
 9.Rancang gambar kota di bintang-bintang, dengan bangunan yang menjulang tinggi, teknologi canggih, dan rasa kekuatan dan keajaiban kosmik. Menghasilkan gambaran kota futuristik di langit, dengan struktur yang menjulang tinggi, teknologi canggih, dan rasa kebebasan dan rasa takjub.
+
+====================================================================================
+
+**Pilih perintah di bawah ini untuk digunakan membuat gambar dengan gaya Robot dan Cyborg.**
+
+1.Rancang gambar robot yang menjelajahi batas-batas baru, dengan tingkat lanjut
+teknologi dan rasa petualangan yang mencerminkan kehausan mereka akan penemuan.
+
+2.Hasilkan gambar robot di luar angkasa, dengan teknologi canggih
+dan rasa takjub mencerminkan perjalanan mereka menuju hal yang tidak diketahui.
+
+3.Desain gambar cyborg dalam misi, dengan senjata berteknologi tinggi
+dan teknologi canggih yang mencerminkan tekad dan
+menyelesaikan.
+
+4.Hasilkan gambar cyborg di dunia virtual reality, dengan
+teknologi canggih dan rasa mendalam yang mencerminkannya
+koneksi ke dunia digital.
+
+5.Desain gambar robot dalam misi, dengan teknologi canggih
+dan rasa tujuan yang mencerminkan perjalanan mereka untuk memenuhi takdir mereka.
+
+====================================================================================
+
+**Pilih Prompt di bawah ini untuk digunakan membuat gambar. dalam berbagai format **
+
+1. Ciptakan gambar naga di awan, dengan kehadiran yang megah dan menakjubkan serta rasa misteri dan keajaiban.
+
+2.Hasilkan gambar naga di bintang-bintang, dengan megah, kehadiran yang menakjubkan dan rasa kekuatan dan keajaiban kosmis.
+
+3.Desain gambar naga dalam api, dengan garang dan sakti kehadiran dan rasa bahaya dan intensitas.
+
+4.Hasilkan gambar naga di dalam air, dengan anggun dan kehadiran yang tenang dan rasa misteri dan ketenangan.
+
+5. Ciptakan gambar naga di langit, dengan kehadiran yang megah dan menakjubkan serta rasa kebebasan dan keajaiban.
+
+6.Desain gambar naga dalam bayang-bayang, dengan misterius dan kehadiran yang sulit dipahami dan rasa kegelapan dan bahaya.
+
+7.Hasilkan gambar naga di hutan, dengan alam liar dan kehadiran liar dan rasa petualangan dan misteri.
+
+8.Membuat gambar naga di pegunungan, dengan megah dan kehadiran yang kuat dan rasa kekuatan dan stabilitas.
+
+====================================================================================
+
+**Pilih Prompt di bawah ini untuk digunakan membuat gambar dalam gaya Seni Abstrak dan Surreal.**
+
+1.Hasilkan representasi abstrak aliran energi, dengan garis, bentuk, dan simbol daya dan gerak yang mengalir dalam a pola dinamis.
+
+2.Desain gambar lanskap seperti mimpi, dengan elemen nyata dan rasa misteri dan keajaiban.
+
+3.Buatlah representasi abstrak kaleidoskop, dengan warna-warna cerah dan bentuk geometris mengalir dengan memukau pola.
+
+4.Membuat gambaran dunia yang aneh dan misterius, dengan cara yang surealis elemen dan rasa keberbedaan dan kegelisahan.
+
+5.Hasilkan representasi abstrak labirin, dengan garis, bentuk, dan simbol-simbol kebingungan dan kompleksitas mengalir secara dinamis pola.
+
+6.Desain gambar lanskap fantastik, dengan sureal elemen dan rasa keindahan dan keajaiban yang menghantui.
