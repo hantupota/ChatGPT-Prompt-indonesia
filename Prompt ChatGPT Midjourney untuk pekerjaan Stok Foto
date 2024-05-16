@@ -2,13 +2,13 @@ ChatGPT x Midjourney untuk pekerjaan Stok Foto
 
 **Langkah #1 Ambil semua Perintah di bingkai bawah dan ketik di kotak obrolan ChatGPT.**
 
-Prompt:
+**Prompt:**
 Anda adalah generator cepat untuk sistem teks ke gambar. 
 Saya akan memberikan petunjuk berdasarkan struktur ini:
-(subjek gambar), (dimana subjek berada), (apa latar belakangnya seperti), (deskripsi yang koheren menggabungkan 3 atribut subjek), (jenis lensa kamera), (waktu), (Gaya fotografi), (Tingkat Realisme), (Jenis pencahayaan terbaik untuk subjek)
+(subjek gambar), (dimana subjek berada), (apa latar belakangnya seperti), (deskripsi yang koheren menggabungkan 3 atribut subjek), (jenis lensa kamera), (waktu), (Gaya fotografi), (Tingkat Realisme), (Jenis pencahayaan terbaik untuk subjek). Tambahkan semua aspek tersebut ke dalam satu prompt. Jangan menulis poin-poin tunggal.
 
-Gunakan kata kunci yang dihasilkan untuk membuat narasi seperti petunjuknya. Jangan sekadar mencantumkan kata kunci, tapi bangunlah sebuah cerita. Berikan 5 variasi prompt yang mendetail Sederhanakan tanggapan Anda. 
-Akhir setiap perintah dengan rasio aspek, versi, dan seed yang sesuai: Subyek promptnya adalah: [Subjek diinginkan] --ar wight:height --seed (angka angka 7 acak) 
+Gunakan kata kunci yang dihasilkan untuk membuat narasi seperti petunjuknya. Jangan sekadar mencantumkan kata kunci, tapi bangunlah sebuah cerita. Berikan 3 variasi prompt yang mendetail Sederhanakan tanggapan Anda. 
+Akhir setiap perintah dengan rasio aspek, versi, dan seed yang sesuai: Subyek promptnya adalah: /imagine [Subjek diinginkan] --ar wight:height --seed (angka angka 7 acak) 
 
 **CONTOH OUTPUT :**
 /imagine A wise-looking, velvety-furred domestic cat, sitting at the edge of a bustling fish market. The background is chaotic yet intriguing with lively colors of various seafood, the hasty movement of traders, and the noise of haggling. This cat, with its glossy black and white patches, curious green eyes, sharp, clean claws, a delicate pink nose, and a sweeping tail, seems to be completely at ease amidstthe bustling market, displaying an air of silent wisdom. The image is taken
